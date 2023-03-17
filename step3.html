@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #bothside {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            column-gap: 50px;
+            background-color: lightblue;
+            position: relative;
+            left: 180px;
+            height: 630px;
+            width: 900px;
+            border-radius: 20px;
+        }
+
+        #left {
+            margin-top: 0px;
+            background-image: url(bg-sidebar-desktop.svg);
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 580px;
+            /* display: flex; */
+            row-gap: 0px;
+            padding: 0px;
+            margin-left: 30px;
+        }
+
+        #step1 {
+            /* display: flex; */
+            margin-top: -35px;
+            margin-left: 55px;
+            color: rgb(144, 141, 141);
+        }
+
+        .b1 {
+            height: 35px;
+            width: 35px;
+            border-radius: 60px;
+            margin-top: 55px;
+            margin-left: 7px;
+            border-color: white;
+            color: white;
+            background-color: rgb(62, 62, 211);
+            cursor: pointer;
+            transition: all 0s;
+        }
+
+        .b1:hover {
+            background-color: palevioletred;
+        }
+
+        #step2 {
+            /* display: flex; */
+            margin-top: -34px;
+            margin-left: 55px;
+            color: rgb(144, 141, 141);
+
+        }
+
+        .b2 {
+            height: 35px;
+            width: 35px;
+            border-radius: 60px;
+            margin-top: 18px;
+            margin-left: 7px;
+            border-color: white;
+            color: white;
+            background-color: rgb(62, 62, 211);
+            cursor: pointer;
+            transition: all 0s;
+        }
+
+        .b2:hover {
+            background-color: palevioletred;
+        }
+
+        #step3 {
+            /* display: flex; */
+            margin-top: -35px;
+            margin-left: 55px;
+            color: rgb(144, 141, 141);
+
+        }
+
+        .b3 {
+            height: 35px;
+            width: 35px;
+            border-radius: 60px;
+            margin-top: 17px;
+            margin-left: 7px;
+            border-color: white;
+            color: white;
+            background-color: rgb(62, 62, 211);
+            cursor: pointer;
+            transition: all 0s;
+        }
+
+        .b3:hover {
+            background-color: palevioletred;
+        }
+
+        #step4 {
+            /* display: flex; */
+            margin-top: -35px;
+            margin-left: 55px;
+            color: rgb(144, 141, 141);
+        }
+
+        .b4 {
+            height: 35px;
+            width: 35px;
+            border-radius: 60px;
+            margin-top: 20px;
+            margin-left: 7px;
+            border-color: white;
+            color: white;
+            background-color: rgb(62, 62, 211);
+            cursor: pointer;
+            transition: all 0s;
+        }
+
+        .b4:hover {
+            background-color: palevioletred;
+        }
+
+        #info1 {
+            margin-left: 55px;
+            color: white;
+
+        }
+
+        #info2 {
+            margin-left: 55px;
+            color: white;
+
+        }
+
+        #info3 {
+            margin-left: 55px;
+            color: white;
+        }
+
+        #info4 {
+            margin-left: 55px;
+            color: white;
+        }
+
+        #right {
+            padding-left: -10px;
+        }
+
+        #pick {
+            margin-top: -30px;
+        }
+
+        #pick h1 {
+            color: rgb(11, 11, 164);
+            font-size: 45px;
+            font-family: cursive;
+        }
+
+        #pick h4 {
+            color: rgb(134, 133, 133);
+            margin-top: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h2 {
+            color: rgb(11, 11, 164);
+        }
+
+        h5 {
+            color: rgb(134, 133, 133);
+        }
+
+        #box {
+            margin-top: 50px;
+        }
+
+        #box1 {
+            border: .5mm solid rgb(188, 188, 188);
+            border-radius: 10px;
+            margin-top: 10px;
+            width: 400px;
+            height: 80px;
+            transition: all 1s;
+        }
+
+        #box1 h2 {
+            margin: 10px;
+        }
+
+        #box1 h5 {
+            margin: 5px;
+        }
+
+        #box1:hover {
+            border-color: rgb(6, 6, 107);
+            background-color: lightgray;
+            cursor: default;
+        }
+
+        #box2 {
+            border: .5mm solid rgb(188, 188, 188);
+            border-radius: 10px;
+            margin-top: 10px;
+            width: 400px;
+            height: 80px;
+            transition: all 1s;
+        }
+
+        #box2 h2 {
+            margin: 10px;
+        }
+
+        #box2 h5 {
+            margin: 10px;
+        }
+
+        #box2:hover {
+            border-color: rgb(6, 6, 107);
+            background-color: lightgray;
+            cursor: default;
+        }
+
+        #box3 {
+            border: .5mm solid rgb(188, 188, 188);
+            border-radius: 10px;
+            margin-top: 10px;
+            width: 400px;
+            height: 80px;
+            transition: all 1s;
+        }
+
+        #box3 h2 {
+            margin: 10px;
+        }
+
+        #box3 h5 {
+            margin: 10px;
+        }
+
+        #box3:hover {
+            border-color: rgb(6, 6, 107);
+            background-color: lightgray;
+            cursor: default;
+        }
+
+        #button {
+            margin-top: 80px;
+            margin-left: 280px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: rgb(1, 1, 53);
+            font-size: medium;
+            font-family: cursive;
+        }
+
+        #next {
+            color: lightgray;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: lightgray;
+        }
+        #end{
+            color: rgb(1, 1, 53);
+            font-size: larger;
+            font-family: cursive;
+        }
+        button {
+            transition: all 1s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bothside">
+        <div id="left">
+            <button class="b1"> <a href="milti-form.html">1</a> </button>
+            <div id="step1">
+                Step 1
+            </div>
+            <div id="info1">
+                YOUR INFO
+            </div>
+            <button class="b2"> <a href="step2.html">2</a> </button>
+            <div id="step2">
+                Step 2
+            </div>
+            <div id="info2">
+                SELECT PLAN
+            </div>
+            <button class="b3"> <a href="step3.html">3</a> </button>
+            <div id="step3">
+                Step 3
+            </div>
+            <div id="info3">
+                ADD-ONS
+            </div>
+            <button class="b4"> <a href="step4.html">4</a> </button>
+            <div id="step4">
+                Step 4
+            </div>
+            <div id="info4">
+                SUMMARY
+            </div>
+        </div>
+        <div id="right">
+            <div id="pick">
+                <h1>Pick add-ons</h1>
+                <h4>add-ons help enhance gaming experience.</h4>
+            </div>
+            <div id="box">
+                <div id="box1">
+                    <h2>Online service</h2>
+                    <h5>Access to multiplayer games</h5>
+                </div>
+                <div id="box2">
+                    <h2>Larger storage</h2>
+                    <h5>Extra 1 tb of cloub save</h5>
+                </div>
+                <div id="box3">
+                    <h2>Customizable Profile</h2>
+                    <h5>Custom theme of your Profile</h5>
+                </div>
+            </div>
+            <a id="end" href="step2.html">Go back</a>
+            <button id="button"><a id="next" href="step4.html"> Next step</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

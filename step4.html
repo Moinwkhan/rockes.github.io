@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 4</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #bothside {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            column-gap: 50px;
+            background-color: lightblue;
+            position: relative;
+            left: 180px;
+            height: 630px;
+            width: 900px;
+            border-radius: 20px;
+        }
+
+        #left {
+            margin-top: 0px;
+            background-image: url(bg-sidebar-desktop.svg);
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 580px;
+            /* display: flex; */
+            row-gap: 0px;
+            padding: 0px;
+            margin-left: 30px;
+            margin-top: 17px;
+        }
+
+        #step1 {
+            /* display: flex; */
+            margin-top: -35px;
+            margin-left: 55px;
+            color: rgb(144, 141, 141);
+        }
+
+        .b1 {
+            height: 35px;
+            width: 35px;
+            border-radius: 60px;
+            margin-top: 55px;
+            margin-left: 7px;
+            border-color: white;
+            color: white;
+            background-color: rgb(62, 62, 211);
+            cursor: pointer;
+            transition: all 0s;
+        }
+
+        .b1:hover {
+            background-color: palevioletred;
+        }
+
+        #step2 {
+            /* display: flex; */
+            margin-top: -34px;
+            margin-left: 55px;
+            color: rgb(144, 141, 141);
+
+        }
+
+        .b2 {
+            height: 35px;
+            width: 35px;
+            border-radius: 60px;
+            margin-top: 18px;
+            margin-left: 7px;
+            border-color: white;
+            color: white;
+            background-color: rgb(62, 62, 211);
+            cursor: pointer;
+            transition: all 0s;
+        }
+
+        .b2:hover {
+            background-color: palevioletred;
+        }
+
+        #step3 {
+            /* display: flex; */
+            margin-top: -35px;
+            margin-left: 55px;
+            color: rgb(144, 141, 141);
+
+        }
+
+        .b3 {
+            height: 35px;
+            width: 35px;
+            border-radius: 60px;
+            margin-top: 17px;
+            margin-left: 7px;
+            border-color: white;
+            color: white;
+            background-color: rgb(62, 62, 211);
+            cursor: pointer;
+            transition: all 0s;
+        }
+
+        .b3:hover {
+            background-color: palevioletred;
+        }
+
+        #step4 {
+            /* display: flex; */
+            margin-top: -35px;
+            margin-left: 55px;
+            color: rgb(144, 141, 141);
+        }
+
+        .b4 {
+            height: 35px;
+            width: 35px;
+            border-radius: 60px;
+            margin-top: 20px;
+            margin-left: 7px;
+            border-color: white;
+            color: white;
+            background-color: rgb(62, 62, 211);
+            cursor: pointer;
+            transition: all 0s;
+        }
+
+        .b4:hover {
+            background-color: palevioletred;
+        }
+
+        #info1 {
+            margin-left: 55px;
+            color: white;
+
+        }
+
+        #info2 {
+            margin-left: 55px;
+            color: white;
+
+        }
+
+        #info3 {
+            margin-left: 55px;
+            color: white;
+        }
+
+        #info4 {
+            margin-left: 55px;
+            color: white;
+        }
+
+        /* #right {} */
+
+        #finish {
+            margin-top: -30px;
+        }
+
+        #finish h1 {
+            color: rgb(11, 11, 164);
+            font-size: 45px;
+            font-family: cursive;
+        }
+
+        #finish h4 {
+            color: rgb(134, 133, 133);
+            margin-top: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #next {
+            color: lightgray;
+            text-decoration: none;
+        }
+        #button {
+            margin-top: 80px;
+            margin-left: 280px;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: rgb(1, 1, 53);
+            font-size: medium;
+            font-family: cursive;
+        }
+        a {
+            text-decoration: none;
+            color: lightgray;
+            height: 40px;
+        }
+        #end{
+            color: rgb(1, 1, 53);
+            font-size: larger;
+            font-family: cursive;
+            
+        }
+        button {
+            transition: all 1s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+        #image{
+            display: flex;
+            margin-left: 620px;
+            margin-top: -100px;
+            border: 1mm solid ;
+            border-radius: 20px;
+            height: 65px;
+            width: 248px;
+        }
+        #image img{
+            margin-top: 5px;
+            margin-left: 3px;
+            border-radius: 10px;
+        }
+        #image p{
+            color: darkblue;
+            font-size: 23px;
+            margin-right: 18px;
+            margin-top: 18px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bothside">
+        <div id="left">
+            <button class="b1"> <a href="milti-form.html">1</a> </button>
+            <div id="step1">
+                Step 1
+            </div>
+            <div id="info1">
+                YOUR INFO
+            </div>
+            <button class="b2"> <a href="step2.html">2</a> </button>
+            <div id="step2">
+                Step 2
+            </div>
+            <div id="info2">
+                SELECT PLAN
+            </div>
+            <button class="b3"> <a href="step3.html">3</a> </button>
+            <div id="step3">
+                Step 3
+            </div>
+            <div id="info3">
+                ADD-ONS
+            </div>
+            <button class="b4"> <a href="step4.html">4</a> </button>
+            <div id="step4">
+                Step 4
+            </div>
+            <div id="info4">
+                SUMMARY
+            </div>
+        </div>
+        <div id="right">
+            <div id="finish">
+                <h1>Finishing up</h1>
+                <h4>Double-check everything looks OK before confirming.</h4>
+            </div>
+            <a id="end" href="step3.html">Go back</a>
+            <button id="button"><a id="next" href="milti-form.html"> Confirm</a></button>
+        </div>
+        <div id="image">
+            <p><i> Produced by </i></p>
+            <img src="image .jpg" alt="" height="50px" width="100px">
+        </div>
+    </div>
+</body>
+
+</html>
